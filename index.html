@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Психологический тест личности</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-sticker">
+                <img src="stickers/светка.webp" alt="Светка" class="welcome-sticker-img">
+            </div>
+            <h1>Психологический тест</h1>
+            <h2 class="test-name">«Насколько хорошо вы знаете Светку?»</h2>
+            <p class="subtitle">Профессиональная оценка личностных характеристик</p>
+            <p class="subtitle-small">Одобрено Международной Ассоциацией Светковедов</p>
+            <button id="start-btn" class="btn-primary">Начать тест</button>
+        </div>
+
+        <div id="question-screen" class="screen">
+            <div class="question-header">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="question-number" id="question-number">Вопрос 1</div>
+            </div>
+            
+            <div class="question-content">
+                <div class="question-sticker" id="question-sticker"></div>
+                <h2 id="question-text"></h2>
+                <div class="answers" id="answers"></div>
+                <div class="answer-feedback" id="answer-feedback"></div>
+            </div>
+        </div>
+
+        <div id="loading-screen" class="screen">
+            <div class="loading-sticker">
+                <img src="stickers/гусеница_курит.webp" alt="loading" class="loading-sticker-img">
+            </div>
+            <h2>Анализ данных…</h2>
+            <div class="loading-steps">
+                <div class="loading-step">Сравнение с эталонами…</div>
+                <div class="loading-step">Проверка на предвзятость…</div>
+                <div class="loading-step">Консультация со Светкой…</div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar-full" id="loading-progress"></div>
+                <div class="progress-text" id="progress-text">0%</div>
+            </div>
+            <div class="loading-note" id="loading-note"></div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <div class="result-sticker" id="result-sticker"></div>
+            <h1 class="result-title" id="result-title">РЕЗУЛЬТАТ:</h1>
+            <h2 class="result-main" id="result-main">Светка — классная</h2>
+            <p class="result-subtitle" id="result-subtitle">(подтверждено тестом)</p>
+            <p class="score-display" id="score-display"></p>
+            
+            <div class="result-details" id="result-details">
+            </div>
+
+            <div class="result-actions">
+                <button id="retry-btn" class="btn-secondary">Пройти ещё раз</button>
+                <button id="add-argument-btn" class="btn-secondary">Добавить аргумент</button>
+            </div>
+        </div>
+
+        <div id="easter-egg-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-sticker" id="modal-sticker"></div>
+                <p id="easter-egg-text"></p>
+                <button id="close-modal" class="btn-primary">Понятно</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
