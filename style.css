@@ -87,7 +87,6 @@ body {
     }
 }
 
-/* Приветственный экран */
 #welcome-screen {
     text-align: center;
 }
@@ -121,7 +120,6 @@ body {
     font-style: italic;
 }
 
-/* Кнопки */
 .btn-primary, .btn-secondary {
     padding: 15px 30px;
     font-size: 1.1em;
@@ -155,7 +153,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Экран вопросов */
 .question-header {
     margin-bottom: 25px;
 }
@@ -275,7 +272,6 @@ body {
     background: linear-gradient(145deg, #fef0ef, #fadbd8);
 }
 
-/* Экран загрузки */
 #loading-screen {
     text-align: center;
 }
@@ -362,7 +358,6 @@ body {
     font-style: italic;
 }
 
-/* Экран результатов */
 #result-screen {
     text-align: center;
 }
@@ -442,7 +437,6 @@ body {
     gap: 12px;
 }
 
-/* Модальное окно */
 .modal {
     display: none;
     position: fixed;
@@ -493,7 +487,6 @@ body {
     line-height: 1.5;
 }
 
-/* Анимации для веселых эффектов */
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
     10%, 30%, 50%, 70%, 90% { transform: translateX(-10px) rotate(-2deg); }
@@ -517,7 +510,6 @@ body {
     color: white !important;
 }
 
-/* Адаптивность */
 @media (max-width: 600px) {
     .container {
         padding: 25px;
